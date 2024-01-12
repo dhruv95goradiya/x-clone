@@ -1,0 +1,33 @@
+{
+  "name": "x-clone",
+  "version": "1.0.0",
+  "description": "Effortlessly launch your own Twitter-like experience with Node.js",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "nyc --reporter=text mocha --recursive test/**/*.mjs --experimental-modules --require esm --exit",
+    "start": "nodemon index.mjs"
+  },
+  "nyc": {
+    "all": true,
+    "include": ["app/middleware/*.mjs","app/controllers/*.mjs", "app/models/*.mjs", "app/routes/*.mjs"],
+    "exclude": ["node_modules", "test/**/*.mjs"]
+  },
+  "keywords": ["Twitter","twitter-clone","x-clone","x_clone","twitter_clone","twitter-clone-backend","x-clone-backend"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.4"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.2",
+    "nyc": "^15.1.0",
+    "supertest": "^6.3.3"
+  }
+}

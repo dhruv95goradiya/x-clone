@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# MongoDB
+/data/db
+*.mdmp
+
+# Environment variables
+.env
+
+# Production build
+/build
+
+# Test files
+test/
+
+# Lock files
+yarn.lock
+package-lock.json
+
+# Report files
+coverage/
+
+# NYC coverage files
+.nyc_output
+
+# VS Code files
+.vscode/
