@@ -17,10 +17,10 @@ Potential for customization and extensions
     git clone https://github.com/dhruv95goradiya/x-clone.git
 
 2. Navigate to the project directory:
-    cd x-clone
+    **cd x-clone**
 
 3. Install dependencies
-    npm install
+    **npm install**
 
 ## Setup
 
@@ -32,7 +32,7 @@ Potential for customization and extensions
 
 ## Usage
 
-    Run backend **npm start**
+1. Run backend **npm start**
 
 ## Testing
 
